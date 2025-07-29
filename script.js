@@ -3,7 +3,7 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
     let tileCount = prompt("How big do you want it?");
-    reset(min(tileCount, 10));
+    reset(min(tileCount, 100));
 })
 
 /*
