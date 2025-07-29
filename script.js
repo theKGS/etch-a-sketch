@@ -3,7 +3,7 @@ const btn = document.querySelector("button");
 
 btn.addEventListener("click", () => {
     let tileCount = prompt("How big do you want it?");
-    reset(tileCount);
+    reset(min(tileCount, 10));
 })
 
 /*
@@ -19,10 +19,14 @@ function reset(tilesPerSide) {
         for (let rc = 0; rc < tilesPerSide; rc++) {
             const elm = document.createElement("div");
             elm.className = "element";
-            elm.textContent = "H"
+            
+            elm.addEventListener("mouseenter", (e) => {
+                console.log(e.target);
+                elm.setAttribute("style", "background-color: black;");
+            });
+
             column.appendChild(elm);
         }
         container[0].appendChild(column);
     }
 }
-

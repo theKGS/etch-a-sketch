@@ -9,9 +9,6 @@
 }
 
 .element {
-    gap: 50px;
-}
-
-.element:hover {
-    background-color: blue;
+    padding: 1rem 0;
+    flex: 1;
 }
