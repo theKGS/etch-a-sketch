@@ -1,5 +1,6 @@
 .container {
-    max-width: 800px;
+    width: 800px;
+    height: 800px;
     display: flex;
     flex-direction: column;
 }
@@ -9,6 +10,6 @@
 }
 
 .element {
-    padding: 1rem 0;
+    aspect-ratio: 1 / 1;
     flex: 1;
 }
