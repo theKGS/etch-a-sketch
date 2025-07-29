@@ -1,0 +1,17 @@
+.container {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+}
+
+.element {
+    gap: 50px;
+}
+
+.element:hover {
+    background-color: blue;
+}
